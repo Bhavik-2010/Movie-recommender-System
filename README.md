@@ -1,19 +1,30 @@
-#  Movie-recommender-System
+# Movie Recommender System  
 
-#Overview
+This is a content-based movie recommender system built using Python, Streamlit, and The Movie Database (TMDb) API. It suggests five similar movies based on user selection.  
 
-This project is a content-based movie recommender system that suggests movies based on their similarity to a given movie. The system uses data from the TMDB (The Movie Database) and employs techniques such as natural language processing (NLP) for text preprocessing and cosine similarity for finding similar movies.
+## Features  
+- Recommends movies based on similarity.  
+- Fetches movie posters using TMDb API.  
+- Interactive UI with Streamlit.  
 
-#Features
+## Installation  
+1. Install dependencies:  
+   ```bash
+   pip install streamlit pandas requests pickle5
+   ```  
+2. Run the app:  
+   ```bash
+   streamlit run app.py
+   ```  
 
-Recommends movies based on their content similarity
-Processes movie data to extract relevant features like genres, keywords, cast, and crew
-Uses stemming to normalize the text data
-Computes similarity between movies using cosine similarity
+## Files  
+- `app.py` – Streamlit app.  
+- `movie_dict.pkl` – Movie data.  
+- `similarity.pkl` – Precomputed similarity matrix.  
 
+## Usage  
+- Select a movie from the dropdown.  
+- Click “Recommend” to get suggestions with posters.  
 
-#Data
-
-The project uses the following datasets from TMDB:
-1)tmdb_5000_credits.csv
-2)tmdb_5000_movies.csv
+## Note  
+Ensure the API key in `fetch_poster` is valid.  
