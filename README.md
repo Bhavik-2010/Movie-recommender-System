@@ -5,17 +5,7 @@ This is a content-based movie recommender system built using Python, Streamlit, 
 ## Features  
 - Recommends movies based on similarity.  
 - Fetches movie posters using TMDb API.  
-- Interactive UI with Streamlit.  
-
-## Installation  
-1. Install dependencies:  
-   ```bash
-   pip install streamlit pandas requests pickle5
-   ```  
-2. Run the app:  
-   ```bash
-   streamlit run app.py
-   ```  
+- Interactive UI with Streamlit.    
 
 ## Files  
 - `app.py` – Streamlit app.  
